@@ -4,38 +4,22 @@
 <br />
 
 <!-- 01 / SIGNAL -->
-<img src="./assets/signal.svg" width="100%" alt="Signal — about: code meets personality. Now building: interactive web experiences with Next.js, TypeScript, motion and UI systems. Current obsession: this could look better." />
+<img src="./assets/signal.svg" width="100%" alt="About Ahmad Zen: code meets personality. Currently building web experiments, learning Next.js, TypeScript and motion. Obsession: this could look better." />
 
 <br />
 
 <!-- 02 / SELECTED WORK -->
-<img src="./assets/projects.svg" width="100%" alt="Selected work — 001 for you, apparently: an interactive memory experience around music, photographs and motion. 002 JAN NIHON: a Japanese learning platform experiment. 003 next: to be announced." />
+<img src="./assets/projects.svg" width="100%" alt="Selected work — 001 for you, apparently: an interactive memory experiment. 002 JAN NIHON: structured Japanese learning without the lifeless part. 003 next: unfinished, obviously." />
 
 <br />
 
 <!-- 03 / TOOLBOX -->
-<p>
-  <code>NEXT.JS&nbsp;&nbsp;/&nbsp;&nbsp;REACT&nbsp;&nbsp;/&nbsp;&nbsp;TYPESCRIPT&nbsp;&nbsp;/&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;/&nbsp;&nbsp;TAILWIND&nbsp;&nbsp;/&nbsp;&nbsp;NODE&nbsp;&nbsp;/&nbsp;&nbsp;SUPABASE&nbsp;&nbsp;/&nbsp;&nbsp;GIT</code>
-</p>
-<p>
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,nodejs,supabase,git" height="44" alt="Toolbox icons: Next.js, React, TypeScript, JavaScript, Tailwind, Node.js, Supabase, Git" />
-</p>
-<p>
-  <sub>only the ones that survived actual projects.</sub>
-</p>
+<img src="./assets/stack.svg" width="100%" alt="Toolbox: Next.js, React, TypeScript, JavaScript, Tailwind, Node, Supabase, Git — the ones that survived actual projects." />
 
 <br />
 
-<!-- 04 / ACTIVITY -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kayzenn123/Kayzenn123/output/github-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/Kayzenn123/Kayzenn123/output/github-snake.svg" width="100%" alt="Contribution graph snake, eating through the commit history." />
-</picture>
-
-<br />
-
-<!-- 05 / END -->
-<img src="./assets/footer.svg" width="100%" alt="Still learning, still building, still changing things. Zenn — see you in the next commit." />
+<!-- 04 / END -->
+<img src="./assets/footer.svg" width="100%" alt="Still making things. See you in the next commit." />
 
 <p>
   <a href="https://github.com/Kayzenn123">GITHUB</a>

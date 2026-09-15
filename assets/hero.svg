@@ -1,64 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="100%" role="img" aria-label="Zenn — I make interfaces that refuse to sit still">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="100%" role="img" aria-label="Zenn. I make interfaces that refuse to sit still.">
   <style>
-    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#7D8590}.ac{fill:#A371F7}
-    .rl{stroke:#21262D}.mono{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace}
+    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#7D8590}.ac{fill:#A371F7}.sg{fill:#A371F7}
+    .ol{fill:none;stroke:#F0F6FC;stroke-width:2.5}
+    .mono{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace}
     .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
     @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
-    @keyframes march{to{stroke-dashoffset:-240}}
-    @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-    @keyframes drift{from{transform:translate(0,0)}to{transform:translate(14px,-12px)}}
+    @keyframes travel{from{transform:translateX(-120px)}to{transform:translateX(800px)}}
+    @keyframes drift{from{transform:translate(0,0)}to{transform:translate(-14px,10px)}}
     .blink{animation:blink 1.1s steps(1) infinite}
-    .pulse{animation:pulse 2.6s ease-in-out infinite}
-    .march{animation:march 40s linear infinite}
-    .rise{animation:rise .9s ease backwards}
-    .rise2{animation:rise .9s ease .12s backwards}
-    .rise3{animation:rise .9s ease .24s backwards}
-    .drift{animation:drift 9s ease-in-out infinite alternate}
+    .travel{animation:travel 7s linear infinite}
+    .drift{animation:drift 14s ease-in-out infinite alternate}
     @media (prefers-reduced-motion: reduce){*{animation:none!important}}
     @media (prefers-color-scheme: light){
-      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}.rl{stroke:#D0D7DE}
+      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}.ol{stroke:#1F2328}
     }
   </style>
-  <rect class="bg" width="1200" height="620"/>
+  <rect class="bg" width="800" height="640"/>
 
-  <!-- top index bar -->
-  <g class="mono" font-size="20" letter-spacing="4">
-    <text class="sc" x="60" y="58">KAYZENN123 / INDEX</text>
-    <circle class="pulse ac" cx="958" cy="51" r="6" fill="#A371F7"/>
-    <text class="sc" x="974" y="58">ONLINE-ish</text>
-  </g>
-  <line class="rl march" x1="60" y1="92" x2="1140" y2="92" stroke-width="1" stroke-dasharray="2 10"/>
+  <!-- vertical edge meta -->
+  <text class="mono sc" font-size="17" letter-spacing="3" transform="rotate(-90 40 600)" x="40" y="600">KAYZENN123 &#8212; JKT / 06&#176;S 106&#176;E</text>
 
-  <!-- main -->
-  <g>
-    <text class="mono ac rise" x="60" y="182" font-size="22" letter-spacing="7">HELLO, I&#8217;M</text>
-    <text class="sans tx rise2" x="52" y="368" font-size="190" font-weight="800" letter-spacing="-4">ZENN.</text>
-    <rect class="blink ac" x="646" y="228" width="18" height="120" fill="#A371F7"/>
-    <text class="sans tx rise3" x="60" y="438" font-size="30" font-weight="700">I make interfaces that refuse to sit still.</text>
-    <text class="mono sc" x="60" y="478" font-size="22">student / creative developer / indonesia</text>
-    <text class="mono ac" x="60" y="514" font-size="20">motion first. details always. boring never.</text>
+  <!-- registration marks -->
+  <text class="mono sc" x="748" y="72" font-size="26">+</text>
+  <text class="mono ac blink" x="66" y="600" font-size="26">+</text>
+
+  <text class="mono ac" x="92" y="112" font-size="21" letter-spacing="6">HELLO, I&#8217;M</text>
+
+  <!-- the object: filled ZE / outline NN. bleeding off canvas -->
+  <g class="drift">
+    <text class="sans tx" x="78" y="372" font-size="248" font-weight="800" letter-spacing="-6">ZE</text>
+    <text class="sans ol" x="428" y="372" font-size="248" font-weight="800" letter-spacing="-6">NN.</text>
   </g>
 
-  <!-- right rail -->
-  <line class="rl" x1="810" y1="130" x2="810" y2="540" stroke-width="1"/>
-  <g>
-    <text class="mono sc" x="846" y="162" font-size="18" letter-spacing="4">CURRENT LOOP</text>
-    <text class="sans tx" x="846" y="208" font-size="34" font-weight="800">BUILD</text>
-    <text class="sans sc" x="846" y="252" font-size="34" font-weight="800" text-decoration="line-through">BREAK</text>
-    <text class="sans tx" x="846" y="296" font-size="34" font-weight="800">FIX</text>
-    <text class="sans ac" x="846" y="340" font-size="34" font-weight="800">REPEAT &#8599;</text>
-    <text class="mono sc" x="846" y="402" font-size="18" letter-spacing="4">STATUS</text>
-    <text class="mono tx" x="846" y="432" font-size="20">making something</text>
-    <text class="mono tx" x="846" y="460" font-size="20">unnecessarily nice.</text>
+  <!-- travelling signal -->
+  <g transform="translate(0,418)">
+    <g class="travel">
+      <line x1="0" y1="0" x2="120" y2="0" stroke-width="2" opacity=".55" stroke="#A371F7"/>
+      <rect x="120" y="-8" width="16" height="16" fill="#A371F7"/>
+    </g>
   </g>
 
-  <!-- drifting mark -->
-  <text class="mono ac drift" x="1070" y="540" font-size="28">+</text>
+  <!-- tagline under the signal path -->
+  <text class="sans tx" x="92" y="478" font-size="37" font-weight="800">I make interfaces</text>
+  <text class="sans tx" x="92" y="522" font-size="37" font-weight="800">that refuse to sit still.</text>
 
-  <!-- bottom strip -->
-  <g class="mono" font-size="18" letter-spacing="3">
-    <text class="sc" x="60" y="586">SOMEWHERE BETWEEN IDEA AND IMPLEMENTATION</text>
-    <text class="ac" x="1052" y="586">01 / &#8734;</text>
-  </g>
+  <!-- off-grid bottom meta -->
+  <text class="mono sc" x="798" y="586" font-size="20" text-anchor="end">student / creative dev / indonesia</text>
+  <text class="mono sc" x="92" y="612" font-size="16" letter-spacing="3">FIG. 00 &#8212; SELF PORTRAIT, UNFINISHED</text>
 </svg>

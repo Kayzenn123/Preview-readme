@@ -1,48 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" role="img" aria-label="Selected work: three project entries">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1020" width="100%" role="img" aria-label="Selected work: for you apparently, Jan Nihon, and an unfinished next project.">
   <style>
     .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#7D8590}.ac{fill:#A371F7}
-    .rl{stroke:#21262D}.mono{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace}
+    .gh{fill:#161B22}.ol{fill:none;stroke:#F0F6FC;stroke-width:2}
+    .rl{stroke:#21262D}.dl{stroke:#7D8590}
+    .mono{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace}
     .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
-    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-    @keyframes nudge{0%,100%{transform:translate(0,0)}50%{transform:translate(6px,-6px)}}
-    .rise{animation:rise .9s ease backwards}
-    .rise2{animation:rise .9s ease .12s backwards}
-    .rise3{animation:rise .9s ease .24s backwards}
-    .nudge{animation:nudge 3.2s ease-in-out infinite}
+    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+    @keyframes travel{from{transform:translateX(-120px)}to{transform:translateX(800px)}}
+    .blink{animation:blink 1.1s steps(1) infinite}
+    .travel{animation:travel 7s linear infinite}
     @media (prefers-reduced-motion: reduce){*{animation:none!important}}
     @media (prefers-color-scheme: light){
-      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}.rl{stroke:#D0D7DE}
+      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}.gh{fill:#EAECEF}.ol{stroke:#1F2328}.rl{stroke:#D0D7DE}
     }
   </style>
-  <rect class="bg" width="1200" height="640"/>
-  <text class="mono sc" x="60" y="52" font-size="18" letter-spacing="4">03 / SELECTED WORK</text>
-  <line class="rl" x1="60" y1="78" x2="1140" y2="78" stroke-width="1"/>
+  <rect class="bg" width="800" height="1020"/>
 
-  <!-- 001 -->
-  <g class="rise">
-    <text class="sans ac" x="60" y="188" font-size="72" font-weight="800" letter-spacing="-2">001</text>
-    <text class="sans tx" x="330" y="164" font-size="36" font-weight="800">for you, apparently.</text>
-    <text class="sans sc" x="330" y="202" font-size="21">memories &#215; music &#215; motion &#215; photographs</text>
-    <text class="mono ac nudge" x="1040" y="182" font-size="19">WEB &#8599;</text>
-  </g>
-  <line class="rl" x1="60" y1="248" x2="1140" y2="248" stroke-width="1"/>
+  <text class="mono sc" x="60" y="58" font-size="17" letter-spacing="4">02 / SELECTED WORK</text>
+  <text class="mono ac blink" x="742" y="64" font-size="24">+</text>
 
-  <!-- 002 -->
-  <g class="rise2">
-    <text class="sans sc" x="60" y="358" font-size="72" font-weight="800" letter-spacing="-2">002</text>
-    <text class="sans tx" x="330" y="334" font-size="36" font-weight="800">JAN NIHON</text>
-    <text class="sans sc" x="330" y="372" font-size="21">structured Japanese learning without the lifeless part</text>
-    <text class="mono ac nudge" x="1022" y="352" font-size="19">LEARN &#8599;</text>
+  <!-- travelling signal near the top -->
+  <g transform="translate(0,92)">
+    <g class="travel">
+      <line x1="0" y1="0" x2="120" y2="0" stroke-width="2" opacity=".55" stroke="#A371F7"/>
+      <rect x="52" y="-26" width="16" height="16" fill="#A371F7"/>
+    </g>
   </g>
-  <line class="rl" x1="60" y1="418" x2="1140" y2="418" stroke-width="1"/>
 
-  <!-- 003 -->
-  <g class="rise3">
-    <text class="sans sc" x="60" y="528" font-size="72" font-weight="800" letter-spacing="-2">003</text>
-    <text class="sans tx" x="330" y="504" font-size="36" font-weight="800">next / ???</text>
-    <text class="sans sc" x="330" y="542" font-size="21">&#8220;this should be simple.&#8221; &#8212; famous last words</text>
-    <text class="mono sc" x="1062" y="522" font-size="19">SOON</text>
-  </g>
-  <line class="rl" x1="60" y1="588" x2="1140" y2="588" stroke-width="1"/>
-  <text class="mono sc" x="60" y="622" font-size="17" letter-spacing="3">SMALL IDEAS HAVE A HABIT OF BECOMING PROJECTS.</text>
+  <!-- 001: dominates the left, numeral cropped top-left -->
+  <text class="sans gh" x="-28" y="300" font-size="230" font-weight="800" letter-spacing="-6">001</text>
+  <text class="mono ac" x="648" y="180" font-size="19">WEB &#8599;</text>
+  <text class="sans tx" x="60" y="330" font-size="78" font-weight="800" letter-spacing="-2">FOR YOU,</text>
+  <text class="sans ol" x="60" y="412" font-size="78" font-weight="800" letter-spacing="-2">APPARENTLY.</text>
+  <text class="sans sc" x="60" y="458" font-size="22">an interactive memory experiment &#8212;</text>
+  <text class="sans sc" x="60" y="488" font-size="22">music &#215; photographs &#215; motion &#215; small moments</text>
+
+  <!-- interrupted divider, crossed by a mark -->
+  <line class="rl" x1="60" y1="540" x2="380" y2="540" stroke-width="1"/>
+  <text class="mono sc" x="404" y="548" font-size="22">&#215;</text>
+  <line class="rl" x1="448" y1="540" x2="740" y2="540" stroke-width="1"/>
+
+  <!-- 002: interrupts from the right -->
+  <text class="sans gh" x="560" y="760" font-size="230" font-weight="800" letter-spacing="-6">002</text>
+  <text class="mono ac" x="60" y="640" font-size="19">&#8599; LEARN</text>
+  <text class="sans tx" x="740" y="660" font-size="66" font-weight="800" letter-spacing="-2" text-anchor="end">JAN NIHON</text>
+  <text class="sans sc" x="740" y="700" font-size="22" text-anchor="end">japanese, structured &#8212;</text>
+  <text class="sans sc" x="740" y="730" font-size="22" text-anchor="end">without the lifeless part</text>
+
+  <!-- single off-center divider, different from the first -->
+  <line class="rl" x1="200" y1="800" x2="740" y2="800" stroke-width="1"/>
+
+  <!-- 003: deliberately unfinished fragment -->
+  <line class="dl" x1="60" y1="856" x2="480" y2="856" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <line class="dl" x1="60" y1="856" x2="60" y2="976" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <line class="dl" x1="60" y1="976" x2="480" y2="976" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <text class="sans tx" x="92" y="936" font-size="56" font-weight="800" letter-spacing="-1">next / ???</text>
+  <text class="mono ac" x="524" y="906" font-size="19">unfinished,</text>
+  <text class="mono ac" x="524" y="932" font-size="19">obviously.</text>
+  <text class="mono sc" x="524" y="962" font-size="17">SOON &#8212; maybe.</text>
+
+  <text class="mono sc" x="740" y="1010" font-size="16" letter-spacing="2" text-anchor="end">more soon. probably.</text>
 </svg>

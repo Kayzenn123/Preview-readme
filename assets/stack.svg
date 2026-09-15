@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" role="img" aria-label="Toolbox: Next.js, React, TypeScript, JavaScript, Tailwind, Node, Supabase, Git.">
+  <style>
+    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#7D8590}.ac{fill:#A371F7}
+    .rl{stroke:#21262D}
+    .mono{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace}
+    .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
+    @keyframes travel{from{transform:translateX(-120px)}to{transform:translateX(800px)}}
+    .travel{animation:travel 7s linear infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+    @media (prefers-color-scheme: light){
+      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}.rl{stroke:#D0D7DE}
+    }
+  </style>
+  <rect class="bg" width="800" height="300"/>
+  <text class="mono sc" x="60" y="52" font-size="17" letter-spacing="4">03 / THINGS THAT SURVIVED ACTUAL PROJECTS</text>
+
+  <!-- alternating-scale typographic strip, two offset lines -->
+  <text class="sans tx" x="60" y="150" font-size="62" font-weight="800" letter-spacing="-1">NEXT <tspan class="sans sc" font-size="30" font-weight="400">react</tspan> TS <tspan class="sans sc" font-size="30" font-weight="400">js</tspan></text>
+  <text class="sans tx" x="180" y="232" font-size="44" font-weight="800" letter-spacing="-1">TAILWIND <tspan class="sans sc" font-size="26" font-weight="400">node</tspan> <tspan class="sans ac" font-size="44" font-weight="800">SUPABASE</tspan> <tspan class="sans sc" font-size="26" font-weight="400">git</tspan></text>
+
+  <!-- travelling signal along the bottom rule -->
+  <line class="rl" x1="60" y1="272" x2="740" y2="272" stroke-width="1"/>
+  <g transform="translate(0,272)">
+    <g class="travel">
+      <rect x="60" y="-8" width="16" height="16" fill="#A371F7"/>
+    </g>
+  </g>
+</svg>
