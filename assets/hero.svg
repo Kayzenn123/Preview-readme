@@ -1,48 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" role="img" aria-label="Hi, I'm Zenn. Zenn makes interfaces, breaks layouts, fixes them again.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="ZENN — makes interfaces that behave">
+  <defs>
+    <clipPath id="wipe">
+      <rect x="-260" y="140" width="0" height="270" transform="skewX(-12)">
+        <animate attributeName="width" dur="14s" repeatCount="indefinite"
+          values="0;0;1700;1700;0" keyTimes="0;0.05;0.30;0.90;1"
+          calcMode="spline" keySplines="0 0 1 1;.16 1 .3 1;0 0 1 1;.7 0 .3 1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
   <style>
-    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#8B949E}.ac{fill:#A371F7}.coral{fill:#E8836B}
-    .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
-    .serif{font-family:Georgia,Times New Roman,serif}
-    @media (prefers-color-scheme: light){
-      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}
-    }
+    .serif{font-family:Georgia,'Iowan Old Style','Times New Roman',serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}
+    .ink{fill:#F4F1EA} .dim{fill:#8B8A93} .accent{fill:#FF5C39}
+    .fade{opacity:0;animation:fade 14s ease-out infinite}
+    .d1{animation-delay:.2s}.d2{animation-delay:.4s}.d3{animation-delay:.6s}.d4{animation-delay:.8s}
+    @keyframes fade{0%{opacity:0}9%,88%{opacity:1}96%,100%{opacity:0}}
   </style>
-  <rect class="bg" width="800" height="560"/>
-  <text class="serif sc" x="70" y="105" font-size="30" font-style="italic">Hi, I&#8217;m</text>
 
-  <text class="serif tx" x="62" y="315" font-size="208" font-weight="700" letter-spacing="-4">ZENN</text>
+  <rect width="1200" height="520" fill="#0A0A0C"/>
+  <rect x="24" y="24" width="1152" height="472" fill="none" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <g fill="none" stroke="#FF5C39" stroke-width="1.5">
+    <path d="M24 62 V24 H62"/><path d="M1176 62 V24 H1138"/>
+    <path d="M24 458 V496 H62"/><path d="M1176 458 V496 H1138"/>
+  </g>
 
-  <!-- the runaway period: dotted loop + dot traveling it, resting at period spot -->
-  <path d="M600,310 C660,375 555,432 415,426 C275,420 148,400 140,330 C134,278 252,250 382,255 C482,259 560,276 600,310"
-        fill="none" stroke="#3A4350" stroke-width="2.5" stroke-dasharray="1 11" stroke-linecap="round"/>
-  <circle r="11" fill="#A371F7">
-    <animateMotion dur="9s" repeatCount="indefinite"
-      path="M600,310 C660,375 555,432 415,426 C275,420 148,400 140,330 C134,278 252,250 382,255 C482,259 560,276 600,310"/>
-  </circle>
+  <text class="mono dim fade" x="64" y="88" font-size="13" letter-spacing="4">ZENN · PROFILE No. 01</text>
+  <text class="mono dim fade d1" x="1136" y="88" font-size="13" letter-spacing="4" text-anchor="end">KUNINGAN, ID</text>
+  <line x1="64" y1="106" x2="1136" y2="106" stroke="#FFFFFF" stroke-opacity=".14"
+        stroke-dasharray="1072" stroke-dashoffset="1072">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite"
+      values="1072;1072;0;0;1072" keyTimes="0;0.02;0.18;0.9;1"
+      calcMode="spline" keySplines="0 0 1 1;.16 1 .3 1;0 0 1 1;.7 0 .3 1"/>
+  </line>
 
-  <!-- hand-drawn scribble circling the E, redrawn every loop (SMIL) -->
-  <path d="M196,196 C196,158 344,156 344,196 C344,236 196,244 190,204 C186,172 310,160 340,192"
-        fill="none" stroke="#E8836B" stroke-width="5" stroke-linecap="round"
-        pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity="0">
-    <animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;.12;1" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.04;.72;.82;1" dur="9s" repeatCount="indefinite"/>
+  <g clip-path="url(#wipe)">
+    <text class="serif ink" x="58" y="348" font-size="215" letter-spacing="-8">ZENN<tspan class="accent">.</tspan></text>
+  </g>
+
+  <path d="M690 205 C560 166 300 166 168 202 C46 234 44 322 162 352 C302 388 592 388 704 346 C794 312 782 248 642 216"
+        fill="none" stroke="#FF5C39" stroke-width="5" stroke-linecap="round" stroke-opacity=".9"
+        stroke-dasharray="2400" stroke-dashoffset="2400" transform="rotate(-2 400 275)">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite"
+      values="2400;2400;0;0;2400" keyTimes="0;0.24;0.52;0.88;1"
+      calcMode="spline" keySplines="0 0 1 1;.16 1 .3 1;0 0 1 1;.7 0 .3 1"/>
   </path>
 
-  <!-- small star tagging along above -->
-  <text class="sans coral" x="648" y="150" font-size="30">&#9733;
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite" additive="sum"/>
-  </text>
+  <g class="mono dim" font-size="12" letter-spacing="3">
+    <text class="fade d2" x="1136" y="206" text-anchor="end">INTERFACES</text>
+    <text class="fade d3" x="1136" y="232" text-anchor="end">MOTION</text>
+    <text class="fade d4" x="1136" y="258" text-anchor="end">SYSTEMS</text>
+  </g>
 
-  <!-- rotating state line (SMIL cross-fade, 9s cycle) -->
-  <text class="sans sc" x="70" y="452" font-size="24">makes interfaces.
-    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.29;.36;.93;1" dur="9s" repeatCount="indefinite"/>
-  </text>
-  <text class="sans sc" x="70" y="452" font-size="24" opacity="0">breaks layouts.
-    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.29;.36;.93;1" dur="9s" begin="-6s" repeatCount="indefinite"/>
-  </text>
-  <text class="sans sc" x="70" y="452" font-size="24" opacity="0">fixes them again.
-    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.29;.36;.93;1" dur="9s" begin="-3s" repeatCount="indefinite"/>
-  </text>
-
-  <text class="sans sc" x="70" y="500" font-size="20">Ahmad Zen &#8212; student, Indonesia</text>
+  <line x1="64" y1="398" x2="560" y2="398" stroke="#FF5C39" stroke-opacity=".55"
+        stroke-dasharray="496" stroke-dashoffset="496">
+    <animate attributeName="stroke-dashoffset" dur="14s" repeatCount="indefinite"
+      values="496;496;0;0;496" keyTimes="0;0.3;0.46;0.9;1"
+      calcMode="spline" keySplines="0 0 1 1;.16 1 .3 1;0 0 1 1;.7 0 .3 1"/>
+  </line>
+  <text class="serif ink fade d2" x="64" y="442" font-size="34" font-style="italic">makes interfaces that behave.</text>
+  <text class="mono dim fade d3" x="64" y="474" font-size="13" letter-spacing="3">AHMAD ZEN — FRONTEND &amp; UI/UX ENGINEER</text>
 </svg>
