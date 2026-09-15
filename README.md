@@ -1,26 +1,32 @@
-<img src="./assets/hero.svg" width="100%" alt="Hi, I'm Zenn. Zenn makes interfaces, breaks layouts, fixes them again." />
+<img src="./assets/hero.svg?v=2" width="100%" alt="ZENN — makes interfaces that behave">
 
-<br />
+<br>
 
-<img src="./assets/constellation.svg" width="100%" alt="Living diagram of the tools Zenn uses daily, connected as one working system." />
+<img src="./assets/stack.svg?v=2" width="100%" alt="Daily drivers">
 
-<br />
+<br>
 
-<img src="./assets/fya.svg" width="100%" alt="For you, apparently: a small piece about memories, photographs, and music." />
+### Selected work
 
-<br />
+| | |
+|:--|:--|
+| **RuangSajak** — ruang publikasi puisi. Vite + React + TS, Supabase. | [repo](#) · [live](#) |
+| **NomNom** — ekosistem kuliner buat anak kos yang lagi tipis. | [repo](#) · [live](#) |
+| **VORTEX** — landing PWA buat super-app mobile. | [repo](#) · [live](#) |
+| **Zenn Portfolio** — tempat semuanya bermuara. | [repo](#) · [live](#) |
 
-<img src="./assets/end.svg" width="100%" alt="Zenn. Currently teaching pixels manners. See you in the next commit." />
+<br>
 
-<p>
-  <a href="https://github.com/Kayzenn123"><img src="./assets/icons/github.svg" height="24" alt="GitHub" /></a>
-  <code>Kayzenn123</code>
-  &nbsp;&nbsp;
-  <a href="https://instagram.com/zennecto"><img src="./assets/icons/instagram.svg" height="24" alt="Instagram" /></a>
-  <code>zennecto</code>
-  &nbsp;&nbsp;
-  <a href="https://twitter.com/zennnectoo"><img src="./assets/icons/x.svg" height="24" alt="X" /></a>
-  <code>zennnectoo</code>
+<img src="./assets/fya.svg?v=2" width="100%" alt="For you, apparently">
+
+<br>
+
+<img src="./assets/end.svg?v=2" width="100%" alt="See you in the next commit">
+
+<p align="left">
+  <a href="https://github.com/Kayzenn123"><img src="./assets/icons/github.svg" width="18" alt="GitHub"></a>
+  &nbsp;<a href="https://instagram.com/zennecto"><img src="./assets/icons/instagram.svg" width="18" alt="Instagram"></a>
+  &nbsp;<a href="https://x.com/zennnectoo"><img src="./assets/icons/x.svg" width="18" alt="X"></a>
 </p>
 
-<p><sub>Next thing: unannounced, unfinished, on purpose.</sub></p>
+<sub>Next thing: unannounced, unfinished, on purpose.</sub>
