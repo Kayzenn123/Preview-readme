@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" role="img" aria-label="For you, apparently: a small interactive piece about memories, photographs, and music.">
+  <style>
+    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#8B949E}.ac{fill:#A371F7}
+    .ph{fill:#E9DFC9}.ph2{fill:#DCCBAC}
+    .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
+    .serif{font-family:Georgia,Times New Roman,serif}
+    @media (prefers-color-scheme: light){
+      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}
+    }
+  </style>
+  <rect class="bg" width="800" height="420"/>
+  <!-- shelf -->
+  <rect x="60" y="252" width="300" height="4" fill="#8B949E" opacity=".5"/>
+  <!-- three leaning prints -->
+  <g transform="rotate(-4 130 200)">
+    <rect class="ph" x="80" y="130" width="100" height="122"/>
+    <rect x="90" y="140" width="80" height="62" fill="#5B6B7C"/>
+    <circle cx="150" cy="158" r="10" fill="#E9DFC9"/>
+    <polygon points="90,202 120,168 140,188 155,176 170,202" fill="#3E4A56"/>
+  </g>
+  <g transform="rotate(2 225 205)">
+    <rect class="ph2" x="180" y="140" width="96" height="114"/>
+    <rect x="189" y="149" width="78" height="58" fill="#7C5A6E"/>
+    <circle cx="210" cy="165" r="8" fill="#DCCBAC"/>
+    <polygon points="189,207 215,180 232,196 245,187 267,207" fill="#503A48"/>
+  </g>
+  <g transform="rotate(-2 310 210)">
+    <rect class="ph" x="268" y="148" width="92" height="108"/>
+    <rect x="276" y="156" width="76" height="54" fill="#4E6E64"/>
+    <polygon points="276,210 300,184 316,198 328,190 352,210" fill="#33503F"/>
+  </g>
+  <!-- a staff line with three notes -->
+  <g stroke="#8B949E" stroke-width="1.5" opacity=".9">
+    <line x1="420" y1="180" x2="740" y2="180"/><line x1="420" y1="196" x2="740" y2="196"/>
+    <line x1="420" y1="212" x2="740" y2="212"/><line x1="420" y1="228" x2="740" y2="228"/>
+  </g>
+  <g fill="#A371F7">
+    <ellipse cx="490" cy="206" rx="9" ry="7" transform="rotate(-15 490 206)"/><rect x="496" y="160" width="2.5" height="46"/>
+    <ellipse cx="570" cy="222" rx="9" ry="7" transform="rotate(-15 570 222)"/><rect x="576" y="176" width="2.5" height="46"/>
+    <ellipse cx="650" cy="190" rx="9" ry="7" transform="rotate(-15 650 190)"/><rect x="656" y="144" width="2.5" height="46"/>
+  </g>
+  <text class="serif tx" x="420" y="300" font-size="36">For you, apparently.</text>
+  <text class="sans sc" x="420" y="338" font-size="20">A small piece about memories,</text>
+  <text class="sans sc" x="420" y="366" font-size="20">photographs, and music.</text>
+</svg>

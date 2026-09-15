@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="100%" role="img" aria-label="Ahmad Zen. Interfaces that refuse to sit still.">
+  <style>
+    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#8B949E}.ac{fill:#A371F7}
+    .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
+    .serif{font-family:Georgia,Times New Roman,serif}
+    @media (prefers-reduced-motion: reduce){}
+    @media (prefers-color-scheme: light){
+      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}
+    }
+  </style>
+  <rect class="bg" width="800" height="460"/>
+  <text class="sans sc" x="80" y="120" font-size="24">Ahmad Zen &#8212; student, Indonesia</text>
+  <text class="serif tx" x="76" y="228" font-size="68" letter-spacing="-1">Interfaces that</text>
+  <text class="serif tx" x="76" y="312" font-size="68" letter-spacing="-1">refuse to sit still.</text>
+  <rect class="ac" x="80" y="348" width="64" height="5" fill="#A371F7"/>
+  <text class="sans sc" x="80" y="396" font-size="22">I build for the web, and fuss over the details.</text>
+</svg>
