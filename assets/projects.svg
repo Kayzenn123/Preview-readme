@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" role="img" aria-label="Selected work: three project entries">
+  <style>
+    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#7D8590}.ac{fill:#A371F7}
+    .rl{stroke:#21262D}.mono{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace}
+    .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes nudge{0%,100%{transform:translate(0,0)}50%{transform:translate(6px,-6px)}}
+    .rise{animation:rise .9s ease backwards}
+    .rise2{animation:rise .9s ease .12s backwards}
+    .rise3{animation:rise .9s ease .24s backwards}
+    .nudge{animation:nudge 3.2s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+    @media (prefers-color-scheme: light){
+      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}.rl{stroke:#D0D7DE}
+    }
+  </style>
+  <rect class="bg" width="1200" height="640"/>
+  <text class="mono sc" x="60" y="52" font-size="18" letter-spacing="4">03 / SELECTED WORK</text>
+  <line class="rl" x1="60" y1="78" x2="1140" y2="78" stroke-width="1"/>
+
+  <!-- 001 -->
+  <g class="rise">
+    <text class="sans ac" x="60" y="188" font-size="72" font-weight="800" letter-spacing="-2">001</text>
+    <text class="sans tx" x="330" y="164" font-size="36" font-weight="800">for you, apparently.</text>
+    <text class="sans sc" x="330" y="202" font-size="21">memories &#215; music &#215; motion &#215; photographs</text>
+    <text class="mono ac nudge" x="1040" y="182" font-size="19">WEB &#8599;</text>
+  </g>
+  <line class="rl" x1="60" y1="248" x2="1140" y2="248" stroke-width="1"/>
+
+  <!-- 002 -->
+  <g class="rise2">
+    <text class="sans sc" x="60" y="358" font-size="72" font-weight="800" letter-spacing="-2">002</text>
+    <text class="sans tx" x="330" y="334" font-size="36" font-weight="800">JAN NIHON</text>
+    <text class="sans sc" x="330" y="372" font-size="21">structured Japanese learning without the lifeless part</text>
+    <text class="mono ac nudge" x="1022" y="352" font-size="19">LEARN &#8599;</text>
+  </g>
+  <line class="rl" x1="60" y1="418" x2="1140" y2="418" stroke-width="1"/>
+
+  <!-- 003 -->
+  <g class="rise3">
+    <text class="sans sc" x="60" y="528" font-size="72" font-weight="800" letter-spacing="-2">003</text>
+    <text class="sans tx" x="330" y="504" font-size="36" font-weight="800">next / ???</text>
+    <text class="sans sc" x="330" y="542" font-size="21">&#8220;this should be simple.&#8221; &#8212; famous last words</text>
+    <text class="mono sc" x="1062" y="522" font-size="19">SOON</text>
+  </g>
+  <line class="rl" x1="60" y1="588" x2="1140" y2="588" stroke-width="1"/>
+  <text class="mono sc" x="60" y="622" font-size="17" letter-spacing="3">SMALL IDEAS HAVE A HABIT OF BECOMING PROJECTS.</text>
+</svg>
