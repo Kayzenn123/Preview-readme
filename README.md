@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="./assets/stack.svg?v=2" width="100%" alt="Daily drivers">
+<img src="./stack.svg?v=2" width="100%" alt="Daily drivers">
 
 <br>
 
