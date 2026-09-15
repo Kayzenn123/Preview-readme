@@ -1,64 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" role="img" aria-label="For you, apparently: a small interactive piece about memories, photographs, and music.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="For you, apparently">
+  <defs>
+    <clipPath id="fwipe">
+      <rect x="-260" y="0" width="0" height="340" transform="skewX(-12)">
+        <animate attributeName="width" dur="13s" repeatCount="indefinite"
+          values="0;0;1700;1700;0" keyTimes="0;0.05;0.28;0.88;1"
+          calcMode="spline" keySplines="0 0 1 1;.16 1 .3 1;0 0 1 1;.7 0 .3 1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
   <style>
-    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#8B949E}.ac{fill:#A371F7}
-    .ph{fill:#E9DFC9}.ph2{fill:#DCCBAC}
-    .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
-    .serif{font-family:Georgia,Times New Roman,serif}
-    @media (prefers-color-scheme: light){
-      .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}
-    }
+    .serif{font-family:Georgia,'Iowan Old Style','Times New Roman',serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}
+    .ink{fill:#F4F1EA}.dim{fill:#8B8A93}.accent{fill:#FF5C39}
+    .spin{animation:spin 9s linear infinite;transform-origin:198px 170px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bob{animation:bob 4s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
   </style>
-  <rect class="bg" width="800" height="420"/>
-  <!-- shelf -->
-  <rect x="60" y="252" width="300" height="4" fill="#8B949E" opacity=".5"/>
-  <!-- three leaning prints, two of them slowly shifting (SMIL) -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;7 -6;0 0" keyTimes="0;.5;1" dur="7s" repeatCount="indefinite"/>
-  <g transform="rotate(-4 130 200)">
-    <rect class="ph" x="80" y="130" width="100" height="122"/>
-    <rect x="90" y="140" width="80" height="62" fill="#5B6B7C"/>
-    <circle cx="150" cy="158" r="10" fill="#E9DFC9"/>
-    <polygon points="90,202 120,168 140,188 155,176 170,202" fill="#3E4A56"/>
+
+  <rect width="1200" height="340" fill="#0A0A0C"/>
+  <rect x="24" y="24" width="1152" height="292" fill="none" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <text class="mono dim" x="64" y="66" font-size="13" letter-spacing="4">SIDE PROJECT — NOT FOR THE PORTFOLIO</text>
+  <line x1="64" y1="82" x2="1136" y2="82" stroke="#FFFFFF" stroke-opacity=".14"
+        stroke-dasharray="1072" stroke-dashoffset="1072">
+    <animate attributeName="stroke-dashoffset" dur="13s" repeatCount="indefinite"
+      values="1072;1072;0;0;1072" keyTimes="0;0.02;0.2;0.88;1"
+      calcMode="spline" keySplines="0 0 1 1;.16 1 .3 1;0 0 1 1;.7 0 .3 1"/>
+  </line>
+
+  <g class="bob">
+    <circle cx="198" cy="170" r="86" fill="#161616" stroke="#FFFFFF" stroke-opacity=".14"/>
+    <g class="spin">
+      <circle cx="198" cy="170" r="86" fill="none" stroke="#FFFFFF" stroke-opacity=".06" stroke-width="1"/>
+      <circle cx="198" cy="170" r="68" fill="none" stroke="#FFFFFF" stroke-opacity=".06" stroke-width="1"/>
+      <circle cx="198" cy="170" r="50" fill="none" stroke="#FFFFFF" stroke-opacity=".06" stroke-width="1"/>
+      <circle cx="198" cy="170" r="32" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="1"/>
+    </g>
+    <circle cx="198" cy="170" r="14" fill="#FF5C39"/>
+    <circle cx="198" cy="170" r="3" fill="#0A0A0C"/>
   </g>
+
+  <g clip-path="url(#fwipe)">
+    <text class="serif ink" x="340" y="152" font-size="46" font-style="italic">For you, apparently.</text>
+    <text class="mono dim" x="340" y="190" font-size="14" letter-spacing="1">a small thing built off the clock — memories, a few</text>
+    <text class="mono dim" x="340" y="212" font-size="14" letter-spacing="1">photographs, and whatever song was playing.</text>
   </g>
-  <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;-6 5;0 0" keyTimes="0;.5;1" dur="8.5s" repeatCount="indefinite"/>
-  <g transform="rotate(2 225 205)">
-    <rect class="ph2" x="180" y="140" width="96" height="114"/>
-    <rect x="189" y="149" width="78" height="58" fill="#7C5A6E"/>
-    <circle cx="210" cy="165" r="8" fill="#DCCBAC"/>
-    <polygon points="189,207 215,180 232,196 245,187 267,207" fill="#503A48"/>
+
+  <g class="mono dim" font-size="12" letter-spacing="3">
+    <text x="1136" y="66" text-anchor="end">TRACK 03</text>
   </g>
-  </g>
-  <!-- tape -->
-  <g opacity=".55">
-    <rect x="96" y="112" width="44" height="16" fill="#DCCBAC" transform="rotate(-24 118 120)"/>
-    <rect x="292" y="132" width="44" height="16" fill="#DCCBAC" transform="rotate(18 314 140)"/>
-  </g>
-  <g transform="rotate(-2 310 210)">
-    <rect class="ph" x="268" y="148" width="92" height="108"/>
-    <rect x="276" y="156" width="76" height="54" fill="#4E6E64"/>
-    <polygon points="276,210 300,184 316,198 328,190 352,210" fill="#33503F"/>
-  </g>
-  <!-- a staff line with three notes -->
-  <g stroke="#8B949E" stroke-width="1.5" opacity=".9">
-    <line x1="420" y1="180" x2="740" y2="180"/><line x1="420" y1="196" x2="740" y2="196"/>
-    <line x1="420" y1="212" x2="740" y2="212"/><line x1="420" y1="228" x2="740" y2="228"/>
-  </g>
-  <g fill="#A371F7">
-    <ellipse cx="490" cy="206" rx="9" ry="7" transform="rotate(-15 490 206)"/><rect x="496" y="160" width="2.5" height="46"/>
-    <ellipse cx="570" cy="222" rx="9" ry="7" transform="rotate(-15 570 222)"/><rect x="576" y="176" width="2.5" height="46"/>
-    <ellipse cx="650" cy="190" rx="9" ry="7" transform="rotate(-15 650 190)"/><rect x="656" y="144" width="2.5" height="46"/>
-  </g>
-  <!-- one note wandering the staff -->
-  <g fill="#E8836B">
-    <ellipse rx="8" ry="6.5"/><rect x="6" y="-44" width="2.5" height="44"/>
-    <animateMotion dur="7s" repeatCount="indefinite" path="M432,208 H728"/>
-  </g>
-  <!-- dotted path from the prints to the staff -->
-  <path d="M360,220 C390,210 395,200 415,200" fill="none" stroke="#3A4350" stroke-width="2" stroke-dasharray="1 9" stroke-linecap="round"/>
-  <text class="serif" x="118" y="300" font-size="21" font-style="italic" fill="#DCCBAC" transform="rotate(-4 118 300)">summer, probably.</text>
-  <text class="serif tx" x="420" y="300" font-size="36">For you, apparently.</text>
-  <text class="sans sc" x="420" y="338" font-size="20">A small piece about memories,</text>
-  <text class="sans sc" x="420" y="366" font-size="20">photographs, and music.</text>
+  <line x1="340" y1="248" x2="900" y2="248" stroke="#FF5C39" stroke-opacity=".5"
+        stroke-dasharray="560" stroke-dashoffset="560">
+    <animate attributeName="stroke-dashoffset" dur="13s" repeatCount="indefinite"
+      values="560;560;0;0;560" keyTimes="0;0.3;0.46;0.9;1"
+      calcMode="spline" keySplines="0 0 1 1;.16 1 .3 1;0 0 1 1;.7 0 .3 1"/>
+  </line>
+  <text class="mono dim" x="340" y="278" font-size="12" letter-spacing="2">NO REPO. NO LIVE LINK. THAT'S THE POINT.</text>
 </svg>
