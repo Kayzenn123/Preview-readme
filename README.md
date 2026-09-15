@@ -1,4 +1,16 @@
-<img src="./assets/hero.svg" width="100%" alt="Ahmad Zen. Interfaces that refuse to sit still. Student in Indonesia building for the web." />
+<img src="./assets/hero.svg" width="100%" alt="Hi, I'm Zenn. Zenn makes interfaces, breaks layouts, fixes them again." />
+
+<br />
+
+<img src="./assets/constellation.svg" width="100%" alt="Living diagram of the tools Zenn uses daily, connected as one working system." />
+
+<br />
+
+<img src="./assets/fya.svg" width="100%" alt="For you, apparently: a small piece about memories, photographs, and music." />
+
+<br />
+
+<img src="./assets/end.svg" width="100%" alt="Zenn. Currently teaching pixels manners. See you in the next commit." />
 
 <p>
   <a href="https://github.com/Kayzenn123"><img src="./assets/icons/github.svg" height="24" alt="GitHub" /></a>
@@ -11,20 +23,4 @@
   <code>zennnectoo</code>
 </p>
 
-<br />
-
-<img src="./assets/constellation.svg" width="100%" alt="Living diagram of the tools Zenn uses daily, connected as one working system." />
-
-<br />
-
-<img src="./assets/fya.svg" width="100%" alt="For you, apparently: a small piece about memories, photographs, and music." />
-
-<br />
-
-<img src="./assets/nihon.svg" width="100%" alt="Jan Nihon: learning Japanese with structure instead of grind." />
-
-<br />
-
-<p><sub>Currently starting something new. Unannounced, unfinished, on purpose.</sub></p>
-
-<p><em>See you in the next commit.</em> — Zenn</p>
+<p><sub>Next thing: unannounced, unfinished, on purpose.</sub></p>

@@ -1,17 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="100%" role="img" aria-label="Ahmad Zen. Interfaces that refuse to sit still.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" role="img" aria-label="Hi, I'm Zenn. Zenn makes interfaces, breaks layouts, fixes them again.">
   <style>
-    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#8B949E}.ac{fill:#A371F7}
+    .bg{fill:#0D1117}.tx{fill:#F0F6FC}.sc{fill:#8B949E}.ac{fill:#A371F7}.coral{fill:#E8836B}
     .sans{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}
     .serif{font-family:Georgia,Times New Roman,serif}
-    @media (prefers-reduced-motion: reduce){}
     @media (prefers-color-scheme: light){
       .bg{fill:#FFFFFF}.tx{fill:#1F2328}.sc{fill:#59636E}
     }
   </style>
-  <rect class="bg" width="800" height="460"/>
-  <text class="sans sc" x="80" y="120" font-size="24">Ahmad Zen &#8212; student, Indonesia</text>
-  <text class="serif tx" x="76" y="228" font-size="68" letter-spacing="-1">Interfaces that</text>
-  <text class="serif tx" x="76" y="312" font-size="68" letter-spacing="-1">refuse to sit still.</text>
-  <rect class="ac" x="80" y="348" width="64" height="5" fill="#A371F7"/>
-  <text class="sans sc" x="80" y="396" font-size="22">I build for the web, and fuss over the details.</text>
+  <rect class="bg" width="800" height="560"/>
+  <text class="serif sc" x="70" y="105" font-size="30" font-style="italic">Hi, I&#8217;m</text>
+
+  <text class="serif tx" x="62" y="315" font-size="208" font-weight="700" letter-spacing="-4">ZENN</text>
+
+  <!-- the runaway period: dotted loop + dot traveling it, resting at period spot -->
+  <path d="M600,310 C660,375 555,432 415,426 C275,420 148,400 140,330 C134,278 252,250 382,255 C482,259 560,276 600,310"
+        fill="none" stroke="#3A4350" stroke-width="2.5" stroke-dasharray="1 11" stroke-linecap="round"/>
+  <circle r="11" fill="#A371F7">
+    <animateMotion dur="9s" repeatCount="indefinite"
+      path="M600,310 C660,375 555,432 415,426 C275,420 148,400 140,330 C134,278 252,250 382,255 C482,259 560,276 600,310"/>
+  </circle>
+
+  <!-- hand-drawn scribble circling the E, redrawn every loop (SMIL) -->
+  <path d="M196,196 C196,158 344,156 344,196 C344,236 196,244 190,204 C186,172 310,160 340,192"
+        fill="none" stroke="#E8836B" stroke-width="5" stroke-linecap="round"
+        pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity="0">
+    <animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;.12;1" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.04;.72;.82;1" dur="9s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- small star tagging along above -->
+  <text class="sans coral" x="648" y="150" font-size="30">&#9733;
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite" additive="sum"/>
+  </text>
+
+  <!-- rotating state line (SMIL cross-fade, 9s cycle) -->
+  <text class="sans sc" x="70" y="452" font-size="24">makes interfaces.
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.29;.36;.93;1" dur="9s" repeatCount="indefinite"/>
+  </text>
+  <text class="sans sc" x="70" y="452" font-size="24" opacity="0">breaks layouts.
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.29;.36;.93;1" dur="9s" begin="-6s" repeatCount="indefinite"/>
+  </text>
+  <text class="sans sc" x="70" y="452" font-size="24" opacity="0">fixes them again.
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.29;.36;.93;1" dur="9s" begin="-3s" repeatCount="indefinite"/>
+  </text>
+
+  <text class="sans sc" x="70" y="500" font-size="20">Ahmad Zen &#8212; student, Indonesia</text>
 </svg>
